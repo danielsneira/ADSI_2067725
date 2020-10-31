@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel's app</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <h1 class="display-3">calculadora cutre</h1>
+        
+        <form method="get" action="">
+            <div class="form-group">
+                <label >Número 1</label>
+                <input type="number" v-model.number="num1">
+
+            </div>
+            <div class="form-group">
+                <label >Número 1</label>
+                <input type="number" v-model.number="num2">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-primary" v-on:click="add()">Add</button>
+                <button type="button" class="btn btn-danger" v-on:click="substract">Substract</button>
+                <button type="button" class="btn btn-warning" v-on:click="multiply">Multiply</button>
+            </div>
+            <hr>
+            <h2>respuestas</h2>
+            <h3 v-text="rta"></h3>
+
+
+           
+        </form>
+        
+
+    </div>
+
+
+    <script src="js/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
